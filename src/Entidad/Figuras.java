@@ -1,9 +1,11 @@
 package Entidad;
 //al usar abstract lo que hacemos es generar funciones que no se implementan en esta clase(padre) pero
 //pero si lo hacen en las clases hijas 
-public abstract class Figuras {
+public abstract class Figuras implements InterfaceFIgura{
     private String color;
     private int numeroLados;
+    public abstract double calculoDePerimetro();
+    public abstract double calculoDeArea();
 
     public Figuras(String color, int numeroLados) {
         this.color = color;

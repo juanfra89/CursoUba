@@ -27,6 +27,16 @@ public class Triangulo extends Figuras{
     }
 
     @Override
+    public double calculoDePerimetro() {
+        return base * 3;
+    }
+
+    @Override
+    public double calculoDeArea() {
+        return (base*altura)/2;
+    }
+
+    @Override
     public double calcularArea() {
         double v = (base * altura) / 2;
         return v;

@@ -31,5 +31,15 @@ public class Cuadrado extends Figuras{
 
     }
 
+    @Override
+    public double calculoDePerimetro() {
+        return 4 * lado;
+    }
+
+    @Override
+    public double calculoDeArea() {
+        return lado * lado;
+    }
+
 
 }
