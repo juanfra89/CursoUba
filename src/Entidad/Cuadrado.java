@@ -25,4 +25,11 @@ public class Cuadrado extends Figuras{
     public double calcularPerimetro() {
         return lado * 4;
     }
+
+    @Override
+    public void imprimir() {
+
+    }
+
+
 }

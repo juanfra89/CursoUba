@@ -36,12 +36,19 @@ public class Triangulo extends Figuras{
     public double calcularPerimetro() {
         return base * 3;
     }
-    //public static boolean esTriangulo(Figuras f) {
-      //  if (f.getNumeroLados() == 3) {
-       //     return true;
-       // } else {
-       //     return false;
-       // }
-   // }
+
+    @Override
+    public void imprimir() {
+
+    }
+
+
+    public static boolean esTriangulo(Figuras f) {
+        if (f.getNumeroLados() == 3) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 }

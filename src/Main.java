@@ -1,4 +1,5 @@
 import Entidad.Cuadrado;
+import Entidad.Imprimir;
 import Entidad.Triangulo;
 
 import static Entidad.Figuras.detectarFigura;
@@ -11,7 +12,9 @@ public class Main {
 
         Triangulo t = new Triangulo("Rojo", 3, 10.0, 5.0);
         Cuadrado c = new Cuadrado(4,2);
-
+        System.out.println("Implementacion T");
+        Imprimir<Triangulo> trianguloImprimir = new Imprimir<>(t);
+        Imprimir<Cuadrado>cuadradoImprimir= new Imprimir<>(c);
 
 
         String color = t.getColor();
